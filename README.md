@@ -24,4 +24,19 @@
 ## Javascript & Visitor Count
 ### The backend portion of this project is to store a visitor count in a DynamoDB table and to update, access, and display the value using API's and Javascript. The actual display of the value on the resume was accomplished using Javascript and HTML code that can be found in this repository. The Javascript code first calls the API to update the visitor count, then calls the API to get and return the current visitor count and stores that value in a local variable that is called in the HTML code.
 
+## Database & DynamoDB
+### Amazon DynamoDB is a fully managed, serverless, key-value, NoSQL database that offers built-in security, continuous backups, automated multi-Region replication, in-memory caching, and data import and export tools. I used a simple DynamoDB table to store my visitor count value and deployed it using YAML code that can be found in this repository.
+
+## API Gateway
+### Amazon API Gateway is a fully managed service that allows developers to create, publish, maintain, monitor, and scure APIs. An API, Application Programming Interface, simplifys development by allowing your product or service communicate with other products and services without having to know how they're implemented. In this case, I used API Gateway to allow my website to communicate with AWS Lambda and DynamoDB by invoking a simple URL. AWS SAM created a basic API for me when I chose the Hello World template while initializing the backend of this project. The template API only needed a few minor method updates, GET & PUT, for it to work for my purposes.
+
+## Lambda Functions
+### Amazon Lambda is a serverless, event-driven compute service that allows you to run code for almost any kind of application or backend service without provisioning or managing servers. I used two seperate Lambda functions for this project. The first one updates the DynamoDB visitor count value each time my website is visited. The second value simply gets the current visitor value from DynamoDB and returns it. I deployed the Lambda functions using YAML code found in this repository.
+
+## Infrastructure as Code
+### Infrastructure as Code uses DevOps principles and versioning to define and deploy infrastructure. IaC generates the same environment every time it is deployed, providing conistency that can't be found using a manual process. For this project I used two different IaC tools, AWS SAM and Terraform. AWS SAM is Amazon's IaC tool that works exclusively with their cloud platform. The benefit of Terraform is it can be used with various cloud providers.
+
+## Version Control & Github
+### GitHub is a cloud-based Git repository hosting service that makes it easier for individuals and teams to use Git for both version control and collaboration. Version control refers to the practice of tracking and managing changes to software code over time. You are currently visiting the Github page for this project.
+
 
