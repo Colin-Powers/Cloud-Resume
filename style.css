@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #696969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1)
+}
+
+.container .left_Side {
+    position: relative;
+    background: #000;
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.profileText .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.profileText h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: lightgreen;
+}
+
+.contactInfo {
+    padding-top: 40px;
+}
+
+.title {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    font-size: 18px;
+    color: lightgreen;
+}
+
+.contactInfo ul li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contactInfo ul li a:hover a:active{
+    color: lightgreen;
+}
+
+.contactInfo ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo.education li {
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h5 {
+    color: lightgreen;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contactInfo.education h4 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.visitor {
+    color: #fff;
+    margin: 15px 0;
+}
+
+.visitor span {
+    color: lightgreen;
+}
+
+.resume-download {
+    color: #fff;
+    
+}
+
+.resume-download a {
+    text-decoration: none;
+    color: lightgreen;
+}
+
+.container .right_Side {
+    position: relative;
+    background: #808080;
+    padding: 40px;
+}
+
+.titleRight {
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.certifications ul {
+    position: relative;
+}
+
+.certifications ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.certifications ul li span {
+    color: lightgreen;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+.certifications ul li h4 {
+    font-size: 16px;
+   
+}
+
+.cloudChallenge ul{
+    position: relative;
+}
+
+.cloudChallenge ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.cloudChallenge ul li h5 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.cloudChallenge ul li h5 a {
+    color: lightgreen;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cloudChallenge p a {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+.skills {
+    position: relative;
+}
+
+.skills ul li {
+    display: inline-grid;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+
+.work ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.work ul li h4 {
+    font-weight: 500;
+}
+
+.work ul li span {
+    color: lightgreen;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 30px;
+}
